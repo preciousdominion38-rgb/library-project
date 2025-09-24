@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Library Project</title>
+    </head>
+    <body>
+        <h1>My Library</h1>
+
+        <!-- Step 6: Book Form -->
+         <form id="bookForm">
+            <input type="text" id="title" placeholder="title" required>
+            <input type="text" id="author" placeholder="author" required>
+            <input type="number" id="pages" placeholder="pages" required>
+            <label>
+                <input type="checkbox" id="isRead"> Read
+            </label>
+            <button type="submit">Add Book</button>
+         </form>
+
+         <hr>
+         
+        <!-- Table to show books -->
+         <table border="1" cellpadding="6">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                    <th>Action</th> <!-- new column -->
+                </tr>
+                </thead>
+                <tbody id="libraryBody">
+                    <!-- Books will be displayed here by javascript -->
+                </tbody>
+         </table>
+
+          <!-- Link to your script -->
+           <script src="script.js"></script>
+    </body>
+</html>
